@@ -1,0 +1,5 @@
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 7\Deliverable 7\Base Classes\bin\Debug\Base Classes.dll
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 7\Deliverable 7\Base Classes\bin\Debug\Base Classes.pdb
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 7\Deliverable 7\Base Classes\obj\Debug\Base Classes.csprojResolveAssemblyReference.cache
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 7\Deliverable 7\Base Classes\obj\Debug\Base Classes.dll
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 7\Deliverable 7\Base Classes\obj\Debug\Base Classes.pdb
