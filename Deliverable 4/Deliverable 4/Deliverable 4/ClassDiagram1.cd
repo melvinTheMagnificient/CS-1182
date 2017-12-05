@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Deliverable_4.Actor">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Deliverable_4.Actor.Direction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Actor.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIEAAVAABgABOAQAwIAAAAIAAAAAAAQAAAE=</HashCode>
+      <FileName>Actor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Deliverable_4.Hero">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAoAAAAAAAgABAAAAAAAAAAIAAAAAAAAEAAA=</HashCode>
+      <FileName>Hero.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_EquippedWeapon" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Deliverable_4.Item">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Deliverable_4.Item.ItemNames" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Item.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAIAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Deliverable_4.Map">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIFQAAAAQBQAAAAAIAADAgAAAAAAAAAEAABAAAgA=</HashCode>
+      <FileName>Map.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_Hero" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Deliverable_4.MapCell">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAgAAAAAAAAAAAAAAAAAgAAAQgAAAAAAAAAQAADA=</HashCode>
+      <FileName>MapCell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_EquippedItem" />
+      <Field Name="_MonsterIsHere" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Deliverable_4.Monster">
+    <Position X="8.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAEAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Monster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Deliverable_4.Potion">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAABAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Potion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Deliverable_4.Weapon">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapon.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Deliverable_4.IRepeatable&lt;T&gt;">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRepeatable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
