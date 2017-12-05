@@ -1,0 +1,17 @@
+/Rabbit Class : Animal
+
+private double _Length;
+
+public double Length [
+	get {
+		Length = _Length;
+	}
+	set {
+		_Length = value;
+	}
+}
+
+public Rabbit (string name, Shelter animalsShelter): base(string name, Shelter animalsShelter){
+	base._Name = name;
+	base._AnimalsSheleter = animalsShelter;
+}

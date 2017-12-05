@@ -1,0 +1,47 @@
+/Dog Class : Animal
+
+private string _Breed;
+private string _Size;
+private double _Height;
+private bool _IsNeutered;
+
+public string Breed {
+	get {
+		Breed = _Breed;
+	}
+	set {
+		_Breed = value;
+	}
+}
+
+public string Size {
+	get {
+		Size = _Size;
+	}
+	set {
+		_Size = value;
+	}
+}
+
+public double Height {
+	get {
+		Height = _Height;
+	}
+	set {
+		_Height = value;
+	}
+}
+
+public bool IsNeutered {
+	get {
+		IsNeutered = _IsNeutered;
+	}
+	set {
+		_IsNeutered = value;
+	}
+}
+
+public Dog (string name, Shelter animalsShelter): base(string name, Shelter animalsShelter){
+	base._Name = name;
+	base._AnimalsSheleter = animalsShelter;
+}

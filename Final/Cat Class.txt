@@ -1,0 +1,47 @@
+/Cat Class : Animal
+
+private string _Attitude;
+private double _Height;
+private bool _IsDeclawed;
+private bool _IsNeutered;
+
+public string Attitude{
+	get {	
+		Attitude = _Attitude;
+	}
+	set {	
+		_Attitude = value;
+	}
+}
+
+public double Height {
+	get {
+		Height = _Height;
+	}
+	set {
+		_Height = value;
+	}
+}
+
+public bool IsDeclawed {
+	get {
+		IsDeclawed = _IsDeclawed;
+	}
+	set {
+		_IsDeclawed = value;
+	}
+}
+
+public bool IsNeutered {
+	get {
+		IsNeutered = _IsNeutered;
+	}
+	 set {
+		_IsNeutered = value;
+	}
+}
+
+public Cat (string name, Shelter animalsShelter): base(string name, Shelter animalsShelter){
+	base._Name = name;
+	base._AnimalsSheleter = animalsShelter;
+}

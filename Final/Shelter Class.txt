@@ -1,0 +1,29 @@
+/Shelter Class
+
+private string _Name;
+private string _Address;
+
+public string Name{
+	get{
+		Name = _Name;
+	}
+	set{
+		_Name = value;
+	}
+}
+
+public string Address{
+	get {
+		Address = _Address;
+	}
+	set {
+		_Address = value;
+	}
+]
+
+public Shelter (string name, string address){
+	_Name = name;
+	_Address = address;
+}
+
+

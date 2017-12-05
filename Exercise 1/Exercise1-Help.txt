@@ -1,0 +1,38 @@
+/// <summary>
+///  set click events for all of the buttons.
+/// </summary>
+private void SetButtonClicks() {
+
+	btn_0_0.Click += btnBomb_Click; btn_0_1.Click += btnBomb_Click; btn_0_2.Click += btnBomb_Click; btn_0_3.Click += btnBomb_Click;
+	btn_0_4.Click += btnBomb_Click; btn_0_5.Click += btnBomb_Click; btn_0_6.Click += btnBomb_Click; btn_0_7.Click += btnBomb_Click;
+	btn_0_8.Click += btnBomb_Click; btn_1_0.Click += btnBomb_Click; btn_1_1.Click += btnBomb_Click; btn_1_2.Click += btnBomb_Click;
+	btn_1_3.Click += btnBomb_Click; btn_1_4.Click += btnBomb_Click; btn_1_5.Click += btnBomb_Click; btn_1_6.Click += btnBomb_Click;
+	btn_1_7.Click += btnBomb_Click; btn_1_8.Click += btnBomb_Click; btn_2_0.Click += btnBomb_Click; btn_2_1.Click += btnBomb_Click;
+	btn_2_2.Click += btnBomb_Click; btn_2_3.Click += btnBomb_Click; btn_2_4.Click += btnBomb_Click; btn_2_5.Click += btnBomb_Click;
+	btn_2_6.Click += btnBomb_Click; btn_2_7.Click += btnBomb_Click; btn_2_8.Click += btnBomb_Click; btn_3_0.Click += btnBomb_Click;
+	btn_3_1.Click += btnBomb_Click; btn_3_2.Click += btnBomb_Click; btn_3_3.Click += btnBomb_Click; btn_3_4.Click += btnBomb_Click;
+	btn_3_5.Click += btnBomb_Click; btn_3_6.Click += btnBomb_Click; btn_3_7.Click += btnBomb_Click; btn_3_8.Click += btnBomb_Click;
+	btn_4_0.Click += btnBomb_Click; btn_4_1.Click += btnBomb_Click; btn_4_2.Click += btnBomb_Click; btn_4_3.Click += btnBomb_Click;
+	btn_4_4.Click += btnBomb_Click; btn_4_5.Click += btnBomb_Click; btn_4_6.Click += btnBomb_Click; btn_4_7.Click += btnBomb_Click;
+	btn_4_8.Click += btnBomb_Click; btn_5_0.Click += btnBomb_Click; btn_5_1.Click += btnBomb_Click; btn_5_2.Click += btnBomb_Click;
+	btn_5_3.Click += btnBomb_Click; btn_5_4.Click += btnBomb_Click; btn_5_5.Click += btnBomb_Click; btn_5_6.Click += btnBomb_Click;
+	btn_5_7.Click += btnBomb_Click; btn_5_8.Click += btnBomb_Click; btn_6_0.Click += btnBomb_Click; btn_6_1.Click += btnBomb_Click;
+	btn_6_2.Click += btnBomb_Click; btn_6_3.Click += btnBomb_Click; btn_6_4.Click += btnBomb_Click; btn_6_5.Click += btnBomb_Click;
+	btn_6_6.Click += btnBomb_Click; btn_6_7.Click += btnBomb_Click; btn_6_8.Click += btnBomb_Click; btn_7_0.Click += btnBomb_Click;
+	btn_7_1.Click += btnBomb_Click; btn_7_2.Click += btnBomb_Click; btn_7_3.Click += btnBomb_Click; btn_7_4.Click += btnBomb_Click;
+	btn_7_5.Click += btnBomb_Click; btn_7_6.Click += btnBomb_Click; btn_7_7.Click += btnBomb_Click; btn_7_8.Click += btnBomb_Click;
+	btn_8_0.Click += btnBomb_Click; btn_8_1.Click += btnBomb_Click; btn_8_2.Click += btnBomb_Click; btn_8_3.Click += btnBomb_Click;
+	btn_8_4.Click += btnBomb_Click; btn_8_5.Click += btnBomb_Click; btn_8_6.Click += btnBomb_Click; btn_8_7.Click += btnBomb_Click;
+	btn_8_8.Click += btnBomb_Click;
+
+}
+/// <summary>
+///  handle the button click for each of the buttons
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+private void btnBomb_Click(object sender, EventArgs e) {
+	Button btn = (Button)sender;
+}
+
+//Button b = (Button)this.Controls["btn_" + ROW + "_" + COL];

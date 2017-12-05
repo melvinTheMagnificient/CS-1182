@@ -1,0 +1,42 @@
+/Abstract Animal Class
+
+private string _Name;
+private string _HairColor;
+private int _Age;
+private string _Sex;
+
+public string Name{
+	get {
+		Name = _Name;
+	}
+	set{
+		_Name = value;
+	}
+}
+
+public string HairColor{
+	get {
+		HairColor = _HairColor;
+	}
+	set{
+		_HairColor = value;
+	}
+}
+
+public int Age{
+	get {
+		Age = _Age;
+	}
+	set{
+		_Age = value;
+	}
+}
+
+public string Sex{
+	get {
+		Sex = _Sex;
+	}
+	set{
+		_Sex = value;
+	}
+}
