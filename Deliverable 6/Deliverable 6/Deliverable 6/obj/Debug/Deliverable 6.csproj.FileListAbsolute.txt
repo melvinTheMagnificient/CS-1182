@@ -1,0 +1,20 @@
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\bin\Debug\Deliverable 6.exe.config
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\bin\Debug\Deliverable 6.exe
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\bin\Debug\Deliverable 6.pdb
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\bin\Debug\BaseClasses.dll
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\bin\Debug\BaseClasses.pdb
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\Deliverable 6.csprojResolveAssemblyReference.cache
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\App.g.cs
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\Deliverable 6_MarkupCompile.cache
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\Deliverable 6_MarkupCompile.lref
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\Deliverable 6.g.resources
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\Deliverable_6.Properties.Resources.resources
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\Deliverable 6.csproj.GenerateResource.Cache
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\Deliverable 6.exe
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\Deliverable 6.pdb
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\frmItem.g.cs
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\frmItem.baml
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\frmMonster.g.cs
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\frmMain.g.cs
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\frmMonster.baml
+C:\Users\mcblu\OneDrive\College\CS 1182\Deliverable 6\Deliverable 6\Deliverable 6\obj\Debug\frmMain.baml

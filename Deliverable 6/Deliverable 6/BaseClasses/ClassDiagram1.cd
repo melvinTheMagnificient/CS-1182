@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BaseClasses.Actor">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="BaseClasses.Actor.Direction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Actor.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAIAAAUCABgIAOAQAQIAAAAIAAAAAAAQAAAA=</HashCode>
+      <FileName>Actor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseClasses.Door">
+    <Position X="8.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAIgAAAAAAAAAAAA=</HashCode>
+      <FileName>Door.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseClasses.DoorKey">
+    <Position X="11" Y="4" Width="1.5" />
+    <InheritanceLine Type="BaseClasses.Item" FixedFromPoint="true">
+      <Path>
+        <Point X="16.812" Y="8.151" />
+        <Point X="16.812" Y="8.642" />
+        <Point X="11.75" Y="8.642" />
+        <Point X="11.75" Y="6.136" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>DoorKey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseClasses.Hero">
+    <Position X="18.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAIAACAAAQgABAAAEAACAAAoBAAAAEAAAEEE=</HashCode>
+      <FileName>Hero.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Weapon" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BaseClasses.Item">
+    <Position X="15.5" Y="5.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="BaseClasses.Item.ItemNames" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Item.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAIAQAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseClasses.Map">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <AssociationLine Name="_Hero" Type="BaseClasses.Hero" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.938" Y="6.949" />
+        <Point X="3.938" Y="8.453" />
+        <Point X="11.667" Y="8.453" Type="JumpStart" />
+        <Point X="11.833" Y="8.453" Type="JumpEnd" />
+        <Point X="16.729" Y="8.453" Type="JumpStart" />
+        <Point X="16.896" Y="8.453" Type="JumpEnd" />
+        <Point X="18.594" Y="8.453" />
+        <Point X="18.594" Y="8.078" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAIEEAAAgURQIAAIAIAADAAAAAAAAAAAACABEAAgA=</HashCode>
+      <FileName>Map.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_Hero" />
+      <Property Name="GameBoard" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BaseClasses.MapCell">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <AssociationLine Name="Item" Type="BaseClasses.Item" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="4.188" />
+        <Point X="10.5" Y="4.188" />
+        <Point X="10.5" Y="7.676" />
+        <Point X="11.667" Y="7.676" Type="JumpStart" />
+        <Point X="11.833" Y="7.676" Type="JumpEnd" />
+        <Point X="15.5" Y="7.676" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAgAAAAAAAAAAAAAAAAAkAAAQAAAAAAAAAAQAADA=</HashCode>
+      <FileName>MapCell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Item" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BaseClasses.Monster">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Monster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BaseClasses.Potion">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="BaseClasses.Potion.PotionColor" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Potion.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAABAgAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Potion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BaseClasses.Weapon">
+    <Position X="13" Y="3" Width="1.5" />
+    <InheritanceLine Type="BaseClasses.Item" FixedFromPoint="true">
+      <Path>
+        <Point X="15.5" Y="5.875" />
+        <Point X="13.75" Y="5.875" />
+        <Point X="13.75" Y="5.328" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Weapon.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="BaseClasses.IRepeatable&lt;T&gt;">
+    <Position X="13.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRepeatable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
