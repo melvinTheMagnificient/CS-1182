@@ -1,0 +1,145 @@
+Deliverable 7 – Final Deliverable
+For this assignment you will focus on combining everything you have done this semester as well as serialization and deserialization. You will expand off of your core objects and code that you written in your deliverables. It would be a good idea to copy code you have written from Deliverable 6. Make sure to cite any imported code that you use. You will need to place all of the custom core classes in a class library. You will not really modify any of your custom classes in the class library other than to flag them as serializable. You will need to create proper associations amongst all of your classes as appropriate. You will need to create a UML class diagram. You will need to create a WPF form that is your game. 
+You will need the following:
+Class Library
+You will need to add a class library project to the solution, this will contain all of your custom classes: Actor, Door, DoorKey, Hero, IRepeatable, Item, Map, MapCell, Monster, Potion, and Weapon. Your WPF application will be in its own project. Reference your Class Library project from your WPF application project. 
+Actor 
+Flag as serializable; no additional changes needed.
+Door 
+Flag as serializable; no additional changes needed.
+DoorKey
+Flag as serializable; no additional changes needed.
+Hero 
+Flag as serializable; no additional changes needed.
+IRepeatable 
+No additional changes needed.
+Item
+Flag as serializable; no additional changes needed.
+Map 
+Flag as serializable; no additional changes needed.
+MapCell 
+Flag as serializable; no additional changes needed.
+Monster 
+Flag as serializable; no additional changes needed.
+Potion 
+Flag as serializable; no additional changes needed.
+Weapon 
+Flag as serializable; no additional changes needed.
+UML Diagram
+Include the UML diagram for your class library. Make sure to update the diagram to properly show any and all associations.
+WPF Test Application
+Import the Game class, frmItem, and frmMonster from Deliverable 6. You will need to fix the namespaces to match the current project. 
+Game
+Add private fields for the game board height and width.
+Modify the ResetGame from the last deliverable to set the height and width fields from the parameters passed in.
+Create another ResetGame method that does not accept any parameters. This method needs to call the method you made for the last deliverable using the fields for the height and width.
+frmMain
+This Window needs to do everything defined in Deliverable 6 with the following changes:
+Add an appropriate title to the Window.
+Add a Menu with the following menu items:
+Save Game – This will serialize the Map Object found on the static Game class. You will use a BinaryFormatter and SaveFileDialog to pick a place to save the serialized file. Use the extension .map for the serialized file data. 
+Load Game – This will deserialize the Map Object from a file with the .map extension. You will use a BinaryFormatter and OpenFileDialog to find and open the file setting the deserialized object to the Map on the static Game class.
+Add details to the form to show the Hero’s name with title, current and maximum HP, equipped weapon (if no weapon is equipped, display “None”), and current key (if the Hero has no key, display “None”).
+Add a method that updates the HeroDetails. 
+Modify the method to fill your game grid with items to do the following:
+If the MapCell has not been seen, set the background to a different color like black, and nothing should show in the cell. It would be a good idea to do this last so that you can test the game mechanics while being able to see the cell contents.
+If the MapCell has been seen, display the contents of the cell (as was done in the previous deliverable). The cell no longer needs to contain an “X” if it has been seen because it will not be a different color.
+Modify the move buttons to handle the following behavior:
+If the Item at the Hero’s current MapCell location is a Door make the frmGameOver Window display. For all other items, the frmItem will be displayed.
+After the hero has moved and the proper subform has been displayed and handled, call a method to handle the current game status.
+Call the method to update the Hero’s details.
+Create a method to handle the current GameState. If the current GameState is lost display the frmGameOver Window. 
+frmGameOver 
+Add an appropriate title to the Window.
+This form will popup anytime that we reach a case where the game might end. For example, if the hero lands on a MapCell that contains a door or the hero is no longer alive.
+Add the following buttons:
+Restart –restarts the game using the ResetGame method with no parameters on the static Game class. Then closes the Window.
+Exit – closes the entire application.
+OK – closes the Window and the game continues.
+Modify the form’s constructor:
+To check to see if the Hero’s current MapCell location contains a Door. If the MapCell contains a Door, check to see if the Hero has found a DoorKey and if it matches the Door using the IsMatch method on the Door object that you wrote in Deliverable 6. If the DoorKey matches the Door, change the GameState to Won. If the there is no DoorKey or the DoorKey does not match the Door, inform the user that the Door cannot be open. 
+Check the GameState. 
+If the GameState is Won, inform the user they have won the game. Make the Reset and Exit buttons available.
+If the GameState is Lost, inform the user they have lost the game. Make the Reset and Exit buttons available.
+If the GameState is Running, Make the OK button available.
+frmItem
+This Window needs to do everything defined in Deliverable 6 with the following changes:
+Add an appropriate title to the Window.
+Modify the Item Window to ask the user if they wish to use the item they found in the Hero’s current MapCell location on the Hero. 
+The Window will need two buttons:
+The first button (Yes) is used to let the item be applied to the Hero. If pressed, apply the item to the Hero using the apply item method on the Hero of the game. Replace the item in the Hero’s current MapCell location with what is returned from the apply item method. Then closes the Window.
+The second button (No) does not apply the item and just closes the Window without making any changes to the MapCell.
+frmMonster
+This Window needs to do everything defined in Deliverable 6 with the following changes:
+Add an appropriate title to the Window.
+Modify the Monster Window to display the name of the Hero and the name of the Monster contained in the MapCell found at the Hero’s current location. Also display the current and maximum HP for both the Hero and the Monster.
+You will need to ask the user if they wish to have the Hero attack the Monster or run away.
+The Window will need two buttons:
+The first button (Attack) is used to let the Hero attack the Monster once. Using the overloaded operator you coded in the last deliverable, add the Hero to the Monster. While both the Hero and Monster are alive, the window stays open and you will need to update the current HP for both the Hero and the Monster. Then wait for the user to press another button. If after adding the two objects together, the Hero is no longer alive, then set the GameState to Lost and close the Window. If the Hero is still alive but the Monster is not, then set the Monster on the MapCell at the Hero’s location to null and close the Window. Otherwise, keep the window open.
+The second button (Run Away) allows the user to tell the Hero to run away from the Monster. Set the runaway property on the Hero to true and use the overloaded operator to add the Hero to the Monster. If the Hero is no longer alive after using the overloaded the operator, set the GameState to Lost then close the Window. Otherwise, just close the Window.
+Grading
+Grades will be determined on this deliverable if the game is able to do everything that is required for the game to be playable by a user other than you. 
+Presentation
+Graphics are not required for this game but affect extra credit points. However functionality is required.
+Extra Credit of Awesomeness
+Additional points will be given above the possible 100 points for this assignment if you impress me with your final project. I will award points based on how impressed I am. Do something to really impress me to get the most points. 
+This will require you to do something above and beyond for this final project. Here are some examples students have done in the past: Modify the game’s content (not fantasy based) but not change the overall behavior of the game. Add additional features in the game such as inventory, levels, etc. Add Graphics and/or sound effects. Add significant dialog and story line.
+Here is an example of what your application might look like:
+
+  
+                                          
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
