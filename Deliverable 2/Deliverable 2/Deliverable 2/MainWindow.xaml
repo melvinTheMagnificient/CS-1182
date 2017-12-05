@@ -1,0 +1,61 @@
+﻿<Window x:Class="Deliverable_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Deliverable_2"
+        mc:Ignorable="d"
+        Title="Test Form" Height="575" Width="600">
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,-11,2.333,-1.667">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.26"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Button x:Name="btnHealActor" Content="Heal Actor (HP +5)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="119" Margin="389,117,0,0" Height="21" Click="btnHealActor_Click"/>
+        <Button x:Name="btnDamageActor" Content="Damage Actor (HP -10)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="226,118,0,0" Height="21" Click="btnDamageActor_Click"/>
+        <Button x:Name="btnCreateActor" Content="Create Actor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="83,196,0,0" Height="20" Click="btnCreateActor_Click"/>
+        <Label x:Name="lblActorHeader" Content="Actor" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="38"/>
+        <Label x:Name="lblActorName" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,26,0,0" Height="26" Width="42"/>
+        <Label x:Name="lblActorTitle" Content="Title" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,56,0,0" Height="26" Width="33"/>
+        <Label x:Name="lblActorHP" Content="HP" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,87,0,0" Height="26" Width="25"/>
+        <Label x:Name="lblActorAttackSpeed" Content="Attack Speed" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,112,0,0" Height="26" Width="80"/>
+        <Label x:Name="lblActorXPosition" Content="X Position" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,140,0,0" Height="26" Width="63"/>
+        <Label x:Name="lblActorYPosition" Content="Y Position" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,168,0,0" Height="26" Width="62"/>
+        <TextBox x:Name="txtActorName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="83,26,0,0"/>
+        <TextBox x:Name="txtActorTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="83,56,0,0"/>
+        <TextBox x:Name="txtActorHP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="83,84,0,0"/>
+        <TextBox x:Name="txtActorAttackSpeed" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="83,112,0,0"/>
+        <TextBox x:Name="txtActorXPosition" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="83,140,0,0"/>
+        <TextBox x:Name="txtActorYPostion" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="83,168,0,0"/>
+        <Button x:Name="btnMoveActorLeft" Content="Move Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="230,178,0,0" Height="21" Click="btnMoveActorLeft_Click"/>
+        <Button x:Name="btnMoveActorUp" Content="Move Up" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="315,154,0,0" Height="21" Click="btnMoveActorUp_Click"/>
+        <Button x:Name="btnMoveActorDown" Content="Move Down" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="320,200,0,0" Height="21" Click="btnMoveActorDown_Click"/>
+        <Button x:Name="btnMoveActorRight" Content="Move Right" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="408,174,0,0" Height="20" Click="btnMoveActorRight_Click"/>
+        <Label x:Name="lblItemHeader" Content="Item" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,249,0,0" Height="26" Width="34"/>
+        <Label x:Name="lblItemName" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,280,0,0" Height="26" Width="42"/>
+        <Label x:Name="lblItemAffectHP" Content="Affect Value" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,311,0,0" Height="26" Width="73"/>
+        <TextBox x:Name="txtItemName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="83,283,0,0"/>
+        <TextBox x:Name="txtItemAffectValue" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="83,315,0,0"/>
+        <Button x:Name="btnCreateItem" Content="Create Item" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="83,343,0,0" Height="20" Click="btnCreateItem_Click"/>
+        <Label x:Name="lblMapCellHeader" Content="MapCell" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,403,0,0" Height="26" Width="53"/>
+        <RadioButton x:Name="rbMapCellHasMonster" Content="Has Monster" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,434,0,0" Height="15" Width="86"/>
+        <RadioButton x:Name="rbMapCellHasItems" Content="Has Item" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,454,0,0" Height="15" Width="65"/>
+        <Button x:Name="btnCreateCellMap" Content="Create Cell Map" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="83,499,0,0" Height="20" Click="btnCreateCellMap_Click"/>
+        <Button x:Name="btnMarkCellDiscovered" Content="Mark Cell Discovered" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="226,499,0,0" Height="20" Click="btnMarkCellDiscovered_Click"/>
+        <Label x:Name="lblActorValues" Content="--" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="226,8,0,0" Height="104" Width="300"/>
+        <Label x:Name="lblItemValues" Content="--" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="238,279,0,0" Height="71" Width="300"/>
+        <Label x:Name="lblMapCellValues" Content="--" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="159,416,0,0" Height="78" Width="258"/>
+        <Rectangle Height="2" Margin="0,242,0.333,303" Fill="Black" />
+        <Rectangle Height="2" Margin="0,396,0.333,149" Fill="Black" />
+    </Grid>
+</Window>
