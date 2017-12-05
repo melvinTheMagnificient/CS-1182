@@ -1,0 +1,19 @@
+﻿<Window x:Class="Deliverable_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Deliverable_3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="400">
+    <Grid>
+        <Button x:Name="btnCreateHero" Content="Create Hero" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,43,0,0" Height="24" Click="btnCreateHero_Click"/>
+        <Button x:Name="btnWeapon" Content="Equip Weapon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,72,0,0" Height="24" Click="btnWeapon_Click"/>
+        <Button x:Name="btnCreatePotion" Content="Create Potion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,191,0,0" Height="24" Click="btnCreatePotion_Click"/>
+        <Button x:Name="btnChangePotionOne" Content="Change Potion One" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,220,0,0" Height="24" Click="btnChangePotionOne_Click"/>
+        <Button x:Name="btnCreateMonster" Content="Create Monster" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,349,0,0" Height="24" Click="btnCreateMonster_Click"/>
+        <TextBlock x:Name="tbHero" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="135,10,0,0" Height="123" Width="226"/>
+        <TextBlock x:Name="tbPotion" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="135,138,0,0" Height="161" Width="226"/>
+        <TextBlock x:Name="tbMonster" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="135,324,0,0" Height="137" Width="226"/>
+    </Grid>
+</Window>
